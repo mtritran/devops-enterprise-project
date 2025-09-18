@@ -73,3 +73,5 @@ systemctl restart nginx
 
 Open https://teleport.mtritran.click in a browser.
 Teleport should be accessible over HTTPS, secured with Let's Encrypt certificate.
+
+![Teleport Login](screenshots/teleport-setup.png)

@@ -83,4 +83,6 @@ systemctl status teleport
 tctl users add admin --roles=editor,access --logins=root
 ```
 
+![Teleport Authen](screenshots/teleport-authen.png)
+
 This generates a one-time signup link. Open the link in a browser, register with Google Authenticator, and log in to the Teleport Web UI.

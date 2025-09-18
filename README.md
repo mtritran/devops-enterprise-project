@@ -15,7 +15,10 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 - [Load Balancer Setup](docs/setup-lb.md)  
 
 ## Results
-![Teleport Login](docs/screenshots/teleport-setup.png)
+
+**Teleport Dashboard**
+
+![Teleport Dashboard](docs/screenshots/teleport-dashboard.png)
 
 ---
 

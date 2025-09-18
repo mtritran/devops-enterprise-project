@@ -47,12 +47,16 @@ Create the Teleport VM with similar specifications.
 3. Change from "Ephemeral" to "Static"
 4. Give it a name (e.g., "lb-static-ip")
 
+![Convert Load Balancer IP to Static](screenshots/external-ip.png)
+
 **Configure Cloudflare DNS:**
 1. Go to Cloudflare DNS management
 2. Create a new A record:
    - Name: `teleport`
    - IPv4 address: Load Balancer static IP
-   - Proxy status: DNS only (gray cloud)
+   - Proxy status: DNS only 
 3. Save the record
+
+![Configure Cloudflare DNS](screenshots/add-teleport.png)
 
 The domain `teleport.mtritran.click` will now point to your Load Balancer's static IP.
