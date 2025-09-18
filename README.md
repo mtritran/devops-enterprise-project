@@ -1,25 +1,28 @@
-# devops-enterprise-project
-End-to-end DevOps project with Teleport, GitLab, Kubernetes, CI/CD, Harbor and Monitoring on Cloud infrastructure
-
 # DevOps Enterprise Project
 
-
 ## Overview
-Dự án triển khai hạ tầng DevOps end-to-end trên Cloud, bắt đầu với **Teleport + Load Balancer** để quản lý truy cập an toàn.  
-Sau đó sẽ mở rộng sang GitLab, Rancher, Kubernetes, CI/CD và Monitoring.
+This project builds the infrastructure and deploys microservices in an end-to-end DevOps workflow on **Google Cloud**.
 
 ## Milestones
-- **Milestone 1:** Domain + Teleport + Load Balancer ✅ (hoàn thành)  
-- **Milestone 2:** GitLab + Rancher (đang triển khai)  
-- **Milestone 3:** Kubernetes Cluster (kế hoạch)  
-- **Milestone 4:** Private Registry (kế hoạch)  
-- **Milestone 5:** CI/CD Pipeline (kế hoạch)  
-- **Milestone 6:** Monitoring (kế hoạch, kết thúc tại đây)  
+- **Milestone 1:** Domain + Teleport + Load Balancer (completed on 18/09/2025)  
+- **Milestone 2:** GitLab + Rancher + Kubernetes Cluster (in progress)  
+- **Milestone 3:** Microservices deployment with Docker Compose (planned)  
 
 ## Documentation
-- [Infrastructure](docs/infrastructure.md)  
-- [Setup Teleport](docs/setup-teleport.md)  
-- [Setup Load Balancer](docs/setup-lb.md)  
+- [Infrastructure](docs/infrastructure.md)
+- [Domain Setup](docs/setup-domain.md)
+- [Teleport Setup](docs/setup-teleport.md)  
+- [Load Balancer Setup](docs/setup-lb.md)  
 
 ## Results
-![Teleport Login](docs/screenshots/teleport-login.png)
+![Teleport Login](docs/screenshots/teleport-setup.png)
+
+---
+
+## Tech Stack
+- **Cloud Provider:** Google Cloud Platform (GCP)  
+- **Reverse Proxy & SSL:** Nginx + Let’s Encrypt (Certbot) 
+- **Access Management:** Teleport   
+- **DNS Management:** Cloudflare  
+- **Orchestration & CI/CD:** Docker, Kubernetes, GitLab, Harbor (planned)  
+- **Monitoring:** Prometheus + Grafana (planned)  
