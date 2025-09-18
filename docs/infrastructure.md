@@ -34,14 +34,9 @@ A Load Balancer VM is responsible for handling all external traffic.
 
 ## Setup Steps
 
-### 1. Create Virtual Machines
+### 1. Convert Load Balancer IP to Static and Add subdomain for Teleport on Cloudflare 
 
-Create the Load Balancer VM with e2-small configuration and Ubuntu 22.04 LTS.
-Create the Teleport VM with similar specifications.
-
-### 2. Configure Static IP and DNS
-
-**Convert Load Balancer IP to Static:**
+#### 1. Convert Load Balancer IP to Static:**
 1. Go to VPC Network > IP addresses > External IP addresses
 2. Find the Load Balancer VM's IP address
 3. Change from "Ephemeral" to "Static"
@@ -49,7 +44,7 @@ Create the Teleport VM with similar specifications.
 
 ![Convert Load Balancer IP to Static](screenshots/external-ip.png)
 
-**Configure Cloudflare DNS:**
+#### 2. Configure Cloudflare DNS:**
 1. Go to Cloudflare DNS management
 2. Create a new A record:
    - Name: `teleport`
