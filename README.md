@@ -29,3 +29,10 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 - **DNS Management:** Cloudflare  
 - **Orchestration & CI/CD:** Docker, Kubernetes, GitLab, Harbor (planned)  
 - **Monitoring:** Prometheus + Grafana (planned)  
+
+---
+
+## Security Notes
+- For security reasons, only the project domain (**mtritran.click**) is shown publicly.  
+- All other sensitive details (e.g., IP addresses, API keys, emails, credentials) are replaced with placeholders in the documentation.  
+- Full configuration is available upon request in a secure environment.
