@@ -50,6 +50,8 @@ sudo bash -c "$(curl -fsSL https://teleport.mtritran.click/scripts/<your-token>/
 2. Navigate to the "Resources" section
 3. You should see the newly added server(s) listed
 
+![Added LB Server](screenshots/added-lb.png)
+
 ## 5. Benefits of Centralized Server Management
 
 - **Secure Access**: All SSH access goes through Teleport's secure gateway
