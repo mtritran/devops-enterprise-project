@@ -15,6 +15,8 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 - [Load Balancer Setup](docs/setup-lb.md)  
 - [Teleport Server Management](docs/teleport-server-management.md)
 - [GitLab Setup](docs/gitlab-setup.md)
+- [Kubernetes Clusters Setup](docs/kubernetes-cluster-setup.md)
+- [Rancher Setup](docs/rancher-setup.md)
 
 ## Results
 
@@ -22,9 +24,13 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 
 ![Teleport Dashboard](docs/screenshots/teleport-dashboard.png)
 
-**Github Dashboard**
+**Gitlab Dashboard**
 
-![Github Dashboard](docs/screenshots/github-dashboard.png)
+![Gitlab Dashboard](docs/screenshots/gitlab-dashboard.png)
+
+**Rancher Dashboard**
+
+![Rancher Dashboard](docs/screenshots/rancher-4.png)
 
 ---
 

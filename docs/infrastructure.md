@@ -35,7 +35,25 @@ A Load Balancer VM is responsible for handling all external traffic.
   - Container registry  
   - Accessible only through the Load Balancer  
 
-## Networking
+### 4. Rancher
+- **Name:** rancher-server  
+- **Machine type:** e2-standard-2 (4 vCPU, 8 GB RAM)  
+- **OS:** Ubuntu 22.04 LTS  
+- **Role:**  
+  - Kubernetes cluster management  
+  - Container orchestration platform  
+  - Multi-cluster operations  
+  - Accessible only through the Load Balancer  
+
+### 5. Kubernetes Cluster
+- **Names:** k8s-master-1, k8s-master-2, k8s-master-3  
+- **Machine type:** e2-standard-2 (4 vCPU, 8 GB RAM) each  
+- **OS:** Ubuntu 22.04 LTS  
+- **Role:**  
+  - High availability control plane (3 masters)  
+  - Container workload orchestration  
+  - Application deployment platform  
+  - Managed through Rancher
 
 - **VPC:** Default VPC with private subnets  
 - **Private communication:** VMs communicate via internal IPs (10.x.x.x range)  
