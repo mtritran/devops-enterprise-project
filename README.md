@@ -20,6 +20,10 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 
 ![Teleport Dashboard](docs/screenshots/teleport-dashboard.png)
 
+**Github Dashboard**
+
+![Github Dashboard](docs/screenshots/github-dashboard.png)
+
 ---
 
 ## Tech Stack

@@ -1,5 +1,21 @@
 # Teleport Setup
 
+## 1. Convert Load Balancer IP to Static and Add Subdomain
+
+### Convert Load Balancer IP to Static:
+1. Go to VPC Network > IP addresses > External IP addresses
+2. Find the Load Balancer VM's IP address
+3. Change from "Ephemeral" to "Static"
+4. Give it a name (e.g., "lb-static-ip")
+
+![Extalnal IP](screenshots/external-ip.png)
+
+### Configure Cloudflare DNS:
+1. Go to Cloudflare DNS management
+2. Create a new A# Teleport Setup
+
+![Add Subdomain Teleport](screenshots/add-teleport.png)
+
 ## 1. Install Teleport
 
 On the Teleport VM:
@@ -83,6 +99,8 @@ systemctl status teleport
 tctl users add admin --roles=editor,access --logins=root
 ```
 
-![Teleport Authen](screenshots/teleport-authen.png)
-
 This generates a one-time signup link. Open the link in a browser, register with Google Authenticator, and log in to the Teleport Web UI.
+
+teleport-authen
+
+![Teleport Authen](screenshots/teleport-authen.png)

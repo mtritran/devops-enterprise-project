@@ -25,33 +25,19 @@ A Load Balancer VM is responsible for handling all external traffic.
   - Provides secure access management (SSH & Web UI)  
   - Accessible only through the Load Balancer  
 
+### 3. GitLab
+- **Name:** gitlab  
+- **Machine type:** e2-standard-4 (4 vCPU, 16 GB RAM)  
+- **OS:** Ubuntu 22.04 LTS  
+- **Role:**  
+  - Git repository management  
+  - CI/CD pipelines  
+  - Container registry  
+  - Accessible only through the Load Balancer  
+
 ## Networking
 
 - **VPC:** Default VPC with private subnets  
 - **Private communication:** VMs communicate via internal IPs (10.x.x.x range)  
 - **Public access:** Only the Load Balancer has a static public IP  
-- **Domain:** `mtritran.click` configured via Cloudflare DNS  
-
-## Setup Steps
-
-### 1. Convert Load Balancer IP to Static and Add subdomain for Teleport on Cloudflare 
-
-#### 1. Convert Load Balancer IP to Static:**
-1. Go to VPC Network > IP addresses > External IP addresses
-2. Find the Load Balancer VM's IP address
-3. Change from "Ephemeral" to "Static"
-4. Give it a name (e.g., "lb-static-ip")
-
-![Convert Load Balancer IP to Static](screenshots/external-ip.png)
-
-#### 2. Configure Cloudflare DNS:**
-1. Go to Cloudflare DNS management
-2. Create a new A record:
-   - Name: `teleport`
-   - IPv4 address: Load Balancer static IP
-   - Proxy status: DNS only 
-3. Save the record
-
-![Configure Cloudflare DNS](screenshots/add-teleport.png)
-
-The domain `teleport.mtritran.click` will now point to your Load Balancer's static IP.
+- **Domain:** `mtritran.click` configured via Cloudflare DNS
