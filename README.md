@@ -5,7 +5,7 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 
 ## Milestones
 - **Milestone 1:** Domain + Teleport + Load Balancer (completed on 18/09/2025)  
-- **Milestone 2:** GitLab + Rancher + Kubernetes Cluster (in progress)  
+- **Milestone 2:** GitLab + Rancher + Kubernetes Cluster (completed on 19/09/2025)  
 - **Milestone 3:** Microservices deployment with Docker Compose (planned)  
 
 ## Documentation
