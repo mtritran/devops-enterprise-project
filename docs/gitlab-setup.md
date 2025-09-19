@@ -34,6 +34,8 @@ This will generate:
 - `/etc/letsencrypt/live/gitlab.mtritran.click/fullchain.pem`
 - `/etc/letsencrypt/live/gitlab.mtritran.click/privkey.pem`
 
+![Pem](screenshots/pem.png)
+
 ## 5. Setup SSH Key for Certificate Transfer
 
 ### Copy SSH key to Load Balancer:
@@ -157,5 +159,7 @@ cat /etc/gitlab/initial_root_password
 Open https://gitlab.mtritran.click in browser
 - Username: `root`
 - Password: Use the password from step 9
+
+![Gitlab Login](screenshots/gitlab-login.png)
 
 GitLab should now be accessible via HTTPS through your Load Balancer.
