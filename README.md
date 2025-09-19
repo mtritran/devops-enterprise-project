@@ -13,6 +13,8 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 - [Domain Setup](docs/setup-domain.md)
 - [Teleport Setup](docs/setup-teleport.md)  
 - [Load Balancer Setup](docs/setup-lb.md)  
+- [Teleport Server Management](docs/teleport-server-management.md)
+- [GitLab Setup](docs/gitlab-setup.md)
 
 ## Results
 
