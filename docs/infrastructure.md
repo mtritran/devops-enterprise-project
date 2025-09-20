@@ -55,6 +55,26 @@ A Load Balancer VM is responsible for handling all external traffic.
   - Application deployment platform  
   - Managed through Rancher
 
+### 6. Dev Server
+- **Name:** dev-server  
+- **Machine type:** e2-standard-2 (4 vCPU, 8 GB RAM)  
+- **OS:** Ubuntu 22.04 LTS  
+- **Role:**  
+  - Development and testing environment  
+  - Used by developers to deploy and validate new features before pushing to production  
+  - Runs staging versions of microservices via Docker Compose or Kubernetes namespace  
+  - Integrated with GitLab CI/CD pipelines for continuous deployment to staging  
+
+### 7. Harbor
+- **Name:** harbor  
+- **Machine type:** e2-standard-2 (4 vCPU, 8 GB RAM)  
+- **OS:** Ubuntu 22.04 LTS  
+- **Role:**  
+  - Private container registry for storing Docker images  
+  - Integrated with GitLab CI/CD pipelines for image push/pull  
+  - Provides vulnerability scanning and image management  
+  - Accessible only through the Load Balancer (via HTTPS with SSL certificates)  
+
 - **VPC:** Default VPC with private subnets  
 - **Private communication:** VMs communicate via internal IPs (10.x.x.x range)  
 - **Public access:** Only the Load Balancer has a static public IP  
