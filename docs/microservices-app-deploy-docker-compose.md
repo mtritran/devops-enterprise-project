@@ -12,14 +12,14 @@ This guide demonstrates deploying a microservices application (Shopnow) using Do
 3. Change from "Ephemeral" to "Static"
 4. Note the static IP address for configuration
 
-![](screenshots/pem.png)
+![](screenshots/mic1.png)
 
 ### Update IP in `.env` file
 1. Open the `.env` file in the frontend project.  
 2. Replace the current IP address with the **public IP of the Dev Server**.  
 
-![](screenshots/pem.png)
-![](screenshots/pem.png)
+![](screenshots/mic2.png)
+![](screenshots/mic3.png)
 
 ### Install Docker:
 ```bash
@@ -71,6 +71,8 @@ For background deployment:
 docker-compose up --build -d
 ```
 
+![](screenshots/mic4.png)
+
 ## 5. Configure Firewall
 
 Open required ports for backend services:
@@ -93,23 +95,23 @@ Access the following URLs to verify services:
 
 - **Eureka Dashboard**: `http://<dev-server-ip>:8761`
 
-![](screenshots/pem.png)
+![](screenshots/mic5.png)
 
 - **Shopping Cart API**: `http://<dev-server-ip>:5863/swagger-ui.html`
 
-![](screenshots/pem.png)
+![](screenshots/mic6.png)
 
 - **User API**: `http://<dev-server-ip>:5865/swagger-ui.html`  
 
-![](screenshots/pem.png)
+![](screenshots/mic7.png)
 
 - **Product API**: `http://<dev-server-ip>:5861/swagger-ui.html`
 
-![](screenshots/pem.png)
+![](screenshots/mic8.png)
 
 - **Keycloak**: `http://<dev-server-ip>:8080`
 
-![](screenshots/pem.png)
+![](screenshots/mic9.png)
 
 ## 7. Deploy Frontend Application
 
@@ -131,19 +133,17 @@ Configure GCP firewall to allow port 3000 for frontend access
 
 - Open `http://<dev-server-public-ip>:3000` in your browser
 
-![](screenshots/image.png)
+![](screenshots/mic10.png)
 
 - Register a new account
 
-![](screenshots/image.png)
+![](screenshots/mic11.png)
 
 - Log in with the account you just created 
 
-![](screenshots/image.png)
-
 - Navigate to the **Products** section (initially it should be empty)
 
-![](screenshots/image.png)
+![](screenshots/mic12.png)
 
 ## 8. Configure Application Data
 
@@ -178,7 +178,7 @@ INSERT INTO public.product (id,category,description,"name",price) VALUES
 - Refresh the page.  
 - The **Products** section should now display the available products.  
 
-![](screenshots/image.png)
+![](screenshots/mic13.png)
 
 ## Architecture Overview
 

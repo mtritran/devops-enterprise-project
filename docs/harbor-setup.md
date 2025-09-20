@@ -11,7 +11,8 @@ This guide sets up Harbor as a private Docker registry for container image manag
 2. Create a new A record:
    - Name: `harbor`
    - IPv4 address: Load Balancer static IP
-   - Proxy status: DNS only (gray cloud)
+
+![](screenshots/ha1.png)
 
 ### Generate SSL Certificate on Load Balancer:
 
@@ -153,6 +154,8 @@ netstat -tlpun | grep 443
    - Username: `admin`
    - Password: `Harbor12345`
 
+![](screenshots/ha2.png)
+
 ## 8. Test Harbor Registry
 
 ### Login to Harbor registry:
@@ -162,7 +165,13 @@ docker login https://harbor.mtritran.click/
 
 ### Create a test project:
 1. In Harbor Web UI, click "New Project"
+
+![](screenshots/ha3.png)
+
 2. Enter project name (e.g., "template")
+
+![](screenshots/ha4.png)
+
 3. Click "OK"
 
 ### Push a test image:
@@ -180,3 +189,5 @@ docker push harbor.mtritran.click/template/alpine:latest
 - Default admin password should be changed after initial setup for production use
 
 Harbor is now accessible at https://harbor.mtritran.click and ready for container image storage and management.
+
+![](screenshots/ha5.png)

@@ -17,6 +17,9 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 - [GitLab Setup](docs/gitlab-setup.md)
 - [Kubernetes Clusters Setup](docs/kubernetes-cluster-setup.md)
 - [Rancher Setup](docs/rancher-setup.md)
+- [Shopnow Project Analysis](docs/shopnow-project-analysis.md)
+- [Deploy Microservice Application(Shopnow) With Docker Compose)](docs/microservices-app-deploy-docker-compose.md) 
+- [Harbor Setup](docs/harbor-setup.md) 
 
 ## Results
 
@@ -31,6 +34,14 @@ This project builds the infrastructure and deploys microservices in an end-to-en
 **Rancher Dashboard**
 
 ![Rancher Dashboard](docs/screenshots/rancher-4.png)
+
+**Microservice Application Deploy With Docker Compose**
+
+![MADWDC](docs/screenshots/mic13.png)
+
+**Harbor Dashboard**
+
+![Harbor Dashboard](docs/screenshots/ha3.png)
 
 ---
 
